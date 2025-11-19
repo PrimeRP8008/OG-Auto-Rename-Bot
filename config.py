@@ -3,20 +3,20 @@ id_pattern = re.compile(r'^.\d+$')
 
 class Config(object):
     # pyro client config
-    API_ID    = os.environ.get("API_ID", "")
-    API_HASH  = os.environ.get("API_HASH", "")
+    API_ID    = os.environ.get("API_ID", "27419615")
+    API_HASH  = os.environ.get("API_HASH", "2f4b181296f0a2615a85471a1c72df44")
     BOT_TOKEN = os.environ.get("BOT_TOKEN", "") 
 
     # database config
-    DB_NAME = os.environ.get("DB_NAME","madflixbotz")     
+    DB_NAME = os.environ.get("DB_NAME","PrimeRp")     
     DB_URL  = os.environ.get("DB_URL","")
  
     # other configs
     BOT_UPTIME  = time.time()
-    START_PIC   = os.environ.get("START_PIC", "https://graph.org/file/4b306f4b15c23a8f22e58.jpg")
-    ADMIN       = [int(admin) if id_pattern.search(admin) else admin for admin in os.environ.get('ADMIN', '').split()]
-    FORCE_SUB   = os.environ.get("FORCE_SUB", "") 
-    LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", ""))
+    START_PIC   = os.environ.get("START_PIC", "https://telegra.ph/file/0516d2fee30d5fd18f1b5-6484ccc9a153d3682a.jpg")
+    ADMIN       = [int(admin) if id_pattern.search(admin) else admin for admin in os.environ.get('ADMIN', '1534632634').split()]
+    FORCE_SUB   = os.environ.get("FORCE_SUB", "-1002608091887, -1002262246598") 
+    LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", "-1002093375923"))
     
     # wes response configuration     
     WEBHOOK = bool(os.environ.get("WEBHOOK", "True"))
@@ -25,17 +25,17 @@ class Config(object):
 class Txt(object):
     # part of text configuration
         
-    START_TXT = """Hello {} 
-    
-➻ This Is An Advanced And Yet Powerful Rename Bot.
-    
-➻ Using This Bot You Can Auto Rename Of Your Files.
-    
-➻ This Bot Also Supports Custom Thumbnail And Custom Caption.
-    
-➻ Use /tutorial Command To Know How To Use Me.
-    
-<b>Bot Is Made By @Madflix_Bots</b>"""
+  START_TXT = """ʜᴇʏ {},
+
+⟡ ᴛʜɪs ɪs ᴀɴ ᴀᴅᴠᴀɴᴄᴇᴅ ʏᴇᴛ ᴘᴏᴡᴇʀꜰᴜʟ ʀᴇɴᴀᴍᴇ ʙᴏᴛ ᴅᴇsɪɢɴᴇᴅ ꜰᴏʀ ᴇꜰꜰᴏʀᴛʟᴇss ꜰɪʟᴇ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ.
+
+⟡ ʀᴇɴᴀᴍᴇ ʏᴏᴜʀ ꜰɪʟᴇs ᴀᴜᴛᴏᴍᴀᴛɪᴄᴀʟʟʏ ɪɴ ᴊᴜsᴛ sᴇᴄᴏɴᴅs.
+
+⟡ sᴜᴘᴘᴏʀᴛs ᴄᴜsᴛᴏᴍ ᴛʜᴜᴍʙɴᴀɪʟ ᴀɴᴅ ᴄᴀᴘᴛɪᴏɴ ꜰᴏʀ ʙᴇᴛᴛᴇʀ ᴘᴇʀsᴏɴᴀʟɪᴢᴀᴛɪᴏɴ.
+
+⟡ ᴜsᴇ /about ᴛᴏ ᴄᴏɴᴛᴀᴄᴛ ᴀᴅᴍɪɴ ᴏʀ ᴛᴏ ᴋɴᴏᴡ ᴍᴏʀᴇ...
+
+ʙᴏᴛ ᴅᴇᴠᴇʟᴏᴘᴇᴅ ʙʏ @codeifybots"""
     
     FILE_NAME_TXT = """<b><u>SETUP AUTO RENAME FORMAT</u></b>
 
@@ -48,14 +48,14 @@ Use These Keywords To Setup Custom File Name
 
 <b>➻ Your Current Auto Rename Format :</b> <code>{format_template}</code> """
     
-    ABOUT_TXT = f"""<b>🤖 My Name :</b> <a href='https://t.me/AutoRenameXBot'>Auto Rename Bot ⚡</a>
+    ABOUT_TXT = f"""<b>🤖 My Name :</b> <a href='https://t.me/OGAutoRenamerxRobot'>Auto Rename Bot ⚡</a>
 <b>📝 Language :</b> <a href='https://python.org'>Python 3</a>
 <b>📚 Library :</b> <a href='https://pyrogram.org'>Pyrogram 2.0</a>
 <b>🚀 Server :</b> <a href='https://heroku.com'>Heroku</a>
-<b>📢 Channel :</b> <a href='https://t.me/Madflix_Bots'>Madflix Botz</a>
-<b>🧑‍💻 Developer :</b> <a href='https://t.me/CallAdminRobot'>Jishu Developer</a>
+<b>📢 Channel :</b> <a href='https://t.me/CodeifyBots>Codeify Bots</a>
+<b>🧑‍💻 Developer :</b> <a href='https://t.me/TgContactxBot'>Vegeta Sama</a>
     
-<b>♻️ Bot Made By :</b> @Madflix_Bots"""
+<b>♻️ Bot Made By :</b> @CodeifyBots"""
 
     
     THUMBNAIL_TXT = """<b><u>🖼️  HOW TO SET THUMBNAIL</u></b>
@@ -82,7 +82,7 @@ Use These Keywords To Setup Custom File Name
     
 If You Like My Bots & Projects, You Can 🎁 Donate Me Any Amount From 10 Rs Upto Your Choice.
     
-<b>🛍 UPI ID:</b> <code>madflixofficial@axl</code> """
+<b>🛍 UPI ID:</b> <code>Soon Adding</code> """
     
     HELP_TXT = """<b>Hey</b> {}
     
